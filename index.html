@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ancient China Pottery</title>
+<style>
+    body {
+        background-color: #add8e6;
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    h1 { 
+        color: #333; 
+        margin-bottom: 20px; 
+    }
+
+    h2 { 
+        color: red; 
+        margin-top: 30px; 
+        text-align: left;
+    }
+
+    h3 {
+        color: #333;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    p { 
+        max-width: 800px; 
+        margin: 10px auto; 
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    img.mainImage {
+        display: block;
+        margin: 20px auto;
+        border: 4px solid black;
+        border-radius: 10px;
+        max-width: 90%;
+        height: auto;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    }
+
+    ol {
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #fff3e0;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        text-align: left;
+    }
+
+    ol li {
+        margin: 8px 0;
+        cursor: pointer;
+        transition: color 0.3s, font-weight 0.3s;
+    }
+
+    ol li:hover {
+        color: #d35400;
+        font-weight: bold;
+    }
+
+    #infoBox {
+        display: none;
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 15px;
+        background-color: #e0f7fa;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        text-align: left;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        width: 80%;
+        max-width: 500px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 2px solid #333;
+    }
+
+    a { 
+        text-decoration: none; 
+        color: #0066cc; 
+        font-weight: bold; 
+    }
+    a:hover { 
+        color: #003366; 
+    }
+</style>
+</head>
+<body>
+
+<h1>Ancient China Pottery</h1>
+
+<img src="https://tse1.mm.bing.net/th/id/OIP.l_zq62_GkxuavDlDo_8_gwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ancient Chinese Pottery" class="mainImage">
+
+<h2>Introduction</h2>
+<p>
+Ancient China pottery is one of the oldest and most influential ceramic traditions in the world. 
+Dating back over 7,000 years, early Chinese civilizations discovered the potential of clay, creating 
+items for cooking, storage, and rituals. Over millennia, pottery evolved from simple hand-formed vessels 
+to elaborately decorated and glazed pieces, eventually leading to the invention of porcelain. Pottery 
+not only fulfilled practical needs but also reflected the cultural, religious, and artistic achievements 
+of each dynasty, making it a vital part of China’s heritage.
+</p>
+
+<h2>Materials and Techniques</h2>
+<p>
+Potters primarily used clay sourced locally, including red, yellow, and white clay varieties. Early 
+methods included hand-shaping with coils, pinching, or slabs, later progressing to the potter’s wheel. 
+Firing techniques evolved from open fires to enclosed kilns capable of reaching higher temperatures. 
+Advanced firing allowed the creation of stronger, thinner, and more delicate pottery. Glazing techniques 
+developed over centuries, producing smooth, colorful, and often shiny surfaces. These innovations laid 
+the foundation for porcelain, which became one of China’s most famous contributions to global art.
+</p>
+
+<h2>Cultural Significance</h2>
+<p>
+Pottery in Ancient China was not just functional; it was deeply intertwined with culture and religion. 
+Ceremonial vessels were used in ancestor worship and sacrifices, while burial pottery and models were 
+placed in tombs to serve the deceased in the afterlife. Decorative patterns often symbolized animals, 
+myths, or spiritual beliefs. Pottery was also a medium for artistic expression, showcasing the skill 
+and creativity of the craftsmen. Trade of pottery expanded both domestically and internationally, 
+spreading Chinese techniques and designs to other regions of Asia and beyond.
+</p>
+
+<h2>Top 10 Most Famous Pottery from Ancient China</h2>
+<ol id="potteryList">
+    <li onclick="showInfo('yangshao')">Yangshao Painted Pottery</li>
+    <li onclick="showInfo('longshan')">Longshan Black Pottery</li>
+    <li onclick="showInfo('terracotta')">Terracotta Army Figures</li>
+    <li onclick="showInfo('shang')">Shang Dynasty Ritual Vessels</li>
+    <li onclick="showInfo('han')">Han Dynasty Burial Pottery</li>
+    <li onclick="showInfo('celadon')">Celadon Pottery</li>
+    <li onclick="showInfo('tang')">Tang Dynasty Tri-Color (Sancai) Pottery</li>
+    <li onclick="showInfo('song')">Song Dynasty Pottery (Ru, Guan, Jun wares)</li>
+    <li onclick="showInfo('yuan')">Yuan Dynasty Blue and White Porcelain</li>
+    <li onclick="showInfo('ming')">Ming Dynasty Porcelain</li>
+</ol>
+
+<div id="infoBox"></div>
+
+<h2>Where I got my facts</h2>
+<a href="https://kids.britannica.com/kids/article/Chinese-pottery/353224" target="_blank">
+    Britannica Kids – Chinese Pottery
+</a>
+
+<script>
+const info = {
+    yangshao: "Yangshao Painted Pottery (5000-3000 BCE): Bright red clay decorated with black geometric and animal designs. Used for storage, cooking, and ceremonial purposes. Represents early artistic expression and craftsmanship in Neolithic China.",
+    longshan: "Longshan Black Pottery (3000-1900 BCE): Famous for thin, polished black 'eggshell' walls. Used in rituals and burials. Demonstrates advanced kiln techniques and precision.",
+    terracotta: "Terracotta Army Figures (c. 210 BCE): Life-sized clay soldiers buried with Emperor Qin Shi Huang to protect him in the afterlife. Each figure unique, with detailed armor, facial features, and expressions.",
+    shang: "Shang Dynasty Ritual Vessels (1600-1046 BCE): Used for sacrifices and ancestor worship. Often decorated with animals or symbolic motifs. Shows the spiritual and artistic sophistication of Shang culture.",
+    han: "Han Dynasty Burial Pottery (206 BCE – 220 CE): Included clay models of houses, animals, and servants placed in tombs to serve the deceased in the afterlife. Reflects social and religious beliefs of the Han period.",
+    celadon: "Celadon Pottery (Eastern Han onwards): Porcelain with jade-like green glaze, prized for elegance and smooth texture. Used for luxury items and trade across Asia.",
+    tang: "Tang Dynasty Tri-Color (Sancai) Pottery (618-907 CE): Colorful glazes of yellow, green, and white. Used for tomb figures, such as horses and attendants, reflecting Tang artistry.",
+    song: "Song Dynasty Pottery (Ru, Guan, Jun wares, 960-1279 CE): Known for elegant shapes, subtle glazes, and refined craftsmanship. Highly valued and often produced in imperial kilns.",
+    yuan: "Yuan Dynasty Blue and White Porcelain (1271-1368 CE): White porcelain decorated with cobalt blue designs. Popular in trade and highly sought worldwide.",
+    ming: "Ming Dynasty Porcelain (1368-1644 CE): Famous for detailed blue-and-white or multicolored designs. Used for decoration, trade, and as gifts. Represents peak of Chinese porcelain artistry."
+};
+
+function showInfo(key) {
+    const box = document.getElementById('infoBox');
+    box.innerHTML = `<p>${info[key]}</p>`;
+    box.style.display = 'block';
+    box.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
